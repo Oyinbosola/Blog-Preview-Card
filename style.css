@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Figtree", sans-serif;
+    background-color: #F4D04E;
+    height: 960px;
+}
+
+html{
+    font-size: 62.5%; /* 10px = 1rem */
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 38.4rem;
+    height: 52.2rem;
+    padding: 2.4rem;
+    background-color: white;
+    border-radius: 2rem;
+    gap: 2.4rem;
+}
+@media(max-width: 435px){
+    .card{
+        width: 32.7rem;
+        height: 50.1rem;
+    }
+    
+    .img-card img{
+        width: 27.9rem;
+    }
+}
+@media(width: 320px){
+    .card{
+        width: 29rem;
+        height: 53rem;
+    }
+    
+    .img-card img{
+        width: 25rem;
+    }
+}
+
+.img-card img{
+    height: 20rem;
+}
+
+.text-section{
+    gap: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.learning{
+    background-color: #F4D04E;
+    width: fit-content;
+    padding: 0.4rem 1.2rem;
+    border-radius: 0.4rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #111;
+}
+
+.publication{
+    font-size: 1.4rem;
+    color: #111;
+}
+
+.heading{
+    font-size: 2.4rem;
+    color: #111;
+}
+
+.heading:hover{
+    color: #F4D04E;
+}
+.heading:active{
+    color: #F4D04E;
+}
+
+.info{
+    color: #6B6B6B;
+    font-size: 1.6rem;
+    
+}
+
+.author-info{
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+.name{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
